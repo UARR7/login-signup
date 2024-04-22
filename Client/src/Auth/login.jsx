@@ -1,8 +1,9 @@
 import { Card, Typography, Input, Form, Flex, Button, Spin, Alert} from 'antd';
 import { Link } from 'react-router-dom';
 import React from 'react';
-import registerimage from "../assets/immm.gif";
+import registerimage from "../assets/imm.gif";
 import useLogin from '../hooks/useLogin';
+import "./fill.css";
 const Login = () => {
     const {error, loading, loginUser} = useLogin();
     const handleLogin = async (values)=>{
@@ -10,16 +11,17 @@ const Login = () => {
     };
 
     return (
-        <Card className='form-container'>
+        <box className="body">
+        <Card className='form-containerl'>
         <Flex gap="large" align='center'>
             <Flex flex={1}>
-                <img src={registerimage} className='auth-image'/>
+                <img src={registerimage} className='auth-imagel'/>
             </Flex>
             <Flex vertical flex={1}>
-                <Typography.Title level={3} strong className='title'>
+                <Typography.Title level={3} strong className='titlel' style={{ color: 'black', textShadow: '2px' }}>
                     Sign In
                 </Typography.Title>
-                <Typography.Title level={1} type="secondary" strong className='slogan'>
+                <Typography.Title level={1} type="secondary" strong className='sloganl' style={{ color: 'grey', textShadow: '2px' }} >
                     Unlock your world
                 </Typography.Title>
                 <Form layout="vertical" onFinish={handleLogin} autoComplete="off">
@@ -69,11 +71,11 @@ const Login = () => {
                             type={`${loading ? '' : 'primary'}`}
                             htmlType="submit" 
                             size="large" 
-                            className="btn">{loading ? <Spin/> : 'Sign In'}</Button>
+                            className="btncl">{loading ? <Spin/> : 'Sign In'}</Button>
                     </Form.Item>
                     <Form.Item>
                         <Link to="/">
-                            <Button size="large" className='btn'>Create an Account</Button>
+                            <Button size="large" className='btncs'>Create an Account</Button>
                         </Link>
                     </Form.Item>
                 </Form>
@@ -81,6 +83,7 @@ const Login = () => {
         </Flex>
         
       </Card>
+      </box>
     );
 };
 

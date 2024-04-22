@@ -1,18 +1,29 @@
 import React from 'react';
-import {Avatar, Button, Card, Flex, Typography} from 'antd';
-import {UserOutlined} from '@ant-design/icons';
+import { Button } from 'antd';
+import { Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-
+import './db.css';
 const Dashboard = () => {
-    const {logout } = useAuth();
+    const { logout } = useAuth();
 
-   
     return (
-        <>
-            <Button size="large" type="primary" className="profile-btn" onClick={logout}>Logout</Button>
-
+        <>  
+            <div>
+                <Link to="/portal">
+                    <button type="primary">Portal</button>
+                </Link>
+            </div>
+            <div>
+                <Link to="/disc">
+                    <button type="primary">Forum Portal</button>
+                </Link>
+            </div>
+            <div>
+                <Button size="large" type="primary" className="profile-btn" onClick={logout}>Logout</Button>
+            </div>
         </>
     );
 };
 
 export default Dashboard;
+

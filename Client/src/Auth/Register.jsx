@@ -1,9 +1,9 @@
 import { Card, Typography, Input, Form, Flex, Button, Spin, Alert} from 'antd';
 import { Link } from 'react-router-dom';
 import React from 'react';
-import registerimage from "../assets/immm.gif";
+import registerimage from "../assets/imm.gif";
 import useSignup from "../hooks/useSignup";
-
+import "./fil.css";
 
 const Register = () => {
     const {loading,error, registerUser} = useSignup();
@@ -12,13 +12,14 @@ const Register = () => {
     };
 
     return (
+      <body className='bodyl'>
       <Card className='form-container'>
         <Flex gap="large" align='center'>
             <Flex vertical flex={1}>
-                <Typography.Title level={3} strong className='title'>
+                <Typography.Title level={3} strong className='title' style={{ color: 'black', textShadow: '2px' }}>
                     Create a new account
                 </Typography.Title>
-                <Typography.Title type="secondary" strong className='slogan'>
+                <Typography.Title type="secondary" strong className='slogan' style={{ color: 'grey', textShadow: '2px' }}>
                     Join for exclusive access!
                 </Typography.Title>
                 <Form layout="vertical" onFinish={handleRegister} autoComplete="off">
@@ -85,11 +86,11 @@ const Register = () => {
                             type={`${loading ? '' : 'primary'}`}
                             htmlType="submit" 
                             size="large" 
-                            className="btn">{loading ? <Spin/> : 'Create Account'}</Button>
+                            className="btnc">{loading ? <Spin/> : 'Create Account'}</Button>
                     </Form.Item>
                     <Form.Item>
                         <Link to="./login">
-                            <Button size="large" className='btn'>Sign In</Button>
+                            <Button size="large" className='btns'>Sign In</Button>
                         </Link>
                     </Form.Item>
                 </Form>
@@ -100,6 +101,7 @@ const Register = () => {
         </Flex>
         
       </Card>
+      </body>
     );
 };
 

@@ -1,0 +1,61 @@
+.bodyl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 105vh;
+    background: #c9d3e7;
+  }
+  
+  .form-container {
+    width: 800px;
+    margin:auto;
+    height: auto;
+  }
+  
+
+  
+  .title {
+    text-align: center;
+    padding: auto;
+
+  }
+  .slogan{
+    text-align: center;
+    text-decoration: solid;
+  }
+  
+  .btnc{
+    width: 100%;
+    background-color: grey;
+    
+  }
+   .btns{
+    width: 100%;
+   }
+  
+  .auth-image{
+    width: 300px;
+    padding: 30px;
+  }
+  
+  .alert{
+    margin-bottom: 1.5rem;
+  }
+  
+  .profile-card{
+    width: 500px;
+  }
+  
+  .avatar{
+    margin-bottom: 1.5rem;
+  }
+  
+  .username{
+    text-transform: capitalize;
+  }
+  
+  .profile-btn{
+    margin-top: 1.3rem;
+    width: 100%;
+  
+  }
