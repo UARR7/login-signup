@@ -3,23 +3,27 @@
     align-items: center;
     justify-content: center;
     height: 105vh;
-    background: #c9d3e7;
+    background-color: antiquewhite;
   }
   
 .form-containerl {
     width: 800px;
     margin:auto;
     height: auto;
+    box-shadow: 0 0px 4px rgba(0.8, 0.8, 0.8, 0.8); /* Adjust box shadow properties */
+    border-radius: 15px; 
     
   }
   
   .titlel {
     text-align: center;
     padding: auto;
+    padding: 0; 
   }
   .sloganl{
     text-align: center;
     text-decoration: solid;
+    margin-bottom: 20px;
   }
   
   .btncl{
@@ -59,3 +63,37 @@
     width: 100%;
   
   }
+
+ /* For screens up to 480px (e.g., very small smartphones) */
+@media (max-width: 480px) {
+  .form-containerl {
+    width: 95%; /* Adjust width for very small screens */
+    margin: auto; /* Center the form */
+  }
+}
+
+/* For screens between 480px and 768px (e.g., small to medium smartphones) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .form-containerl {
+    width: 85%; /* Adjust width for small to medium screens */
+    margin: auto; /* Center the form */
+  }
+}
+
+/* For screens between 768px and 1024px (e.g., tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .form-containerl {
+    width: 70%; /* Adjust width for tablets */
+    margin: auto; /* Center the form */
+  }
+}
+
+/* For screens larger than 1024px (e.g., desktops) */
+@media (min-width: 1025px) {
+  .form-containerl {
+    width: 55%; /* Adjust width for larger screens */
+    margin: auto; /* Center the form */
+  }
+}
+
+  

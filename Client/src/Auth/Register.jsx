@@ -16,11 +16,11 @@ const Register = () => {
       <Card className='form-container'>
         <Flex gap="large" align='center'>
             <Flex vertical flex={1}>
-                <Typography.Title level={3} strong className='title' style={{ color: 'black', textShadow: '2px' }}>
-                    Create a new account
+                <Typography.Title level={2} strong className='title' style={{ color: 'black', textShadow: '2px' }}>
+                    New User?
                 </Typography.Title>
-                <Typography.Title type="secondary" strong className='slogan' style={{ color: 'grey', textShadow: '2px' }}>
-                    Join for exclusive access!
+                <Typography.Title strong className='slogan' style={{ color: 'grey', textShadow: '2px' }}>
+                    Let's Heal Together!
                 </Typography.Title>
                 <Form layout="vertical" onFinish={handleRegister} autoComplete="off">
                     <Form.Item

@@ -10,12 +10,12 @@ const Dashboard = () => {
         <>  
             <div>
                 <Link to="/portal">
-                    <button type="primary">Portal</button>
+                    <button type="primary">Forum</button>
                 </Link>
             </div>
             <div>
                 <Link to="/disc">
-                    <button type="primary">Forum Portal</button>
+                    <button type="primary">Portal</button>
                 </Link>
             </div>
             <div>

@@ -2,14 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 105vh;
-    background: #c9d3e7;
+    height: 140vh;
+    background-color: antiquewhite;
   }
   
   .form-container {
     width: 800px;
     margin:auto;
     height: auto;
+    box-shadow: 0 0px 4px rgba(0.8, 0.8, 0.8, 0.8); /* Adjust box shadow properties */
+    border-radius: 15px; 
   }
   
 
@@ -59,3 +61,32 @@
     width: 100%;
   
   }
+
+ /* For screens up to 576px (e.g., smartphones in portrait mode) */
+@media (max-width: 576px) {
+  .form-container {
+    width: 90%; /* Adjust width to fit smaller screens */
+  }
+}
+
+/* For screens between 577px and 768px (e.g., smartphones in landscape mode and tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .form-container {
+    width: 80%; /* Adjust width for medium-sized screens */
+  }
+}
+
+/* For screens between 769px and 992px (e.g., larger tablets and small desktops) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .form-container {
+    width: 60%; /* Adjust width for larger tablets and small desktops */
+  }
+}
+
+/* For screens between 993px and 1200px (e.g., larger desktops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .form-container {
+    width: 70%; /* Adjust width for larger desktops */
+  }
+}
+

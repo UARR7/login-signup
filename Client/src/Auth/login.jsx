@@ -18,11 +18,11 @@ const Login = () => {
                 <img src={registerimage} className='auth-imagel'/>
             </Flex>
             <Flex vertical flex={1}>
-                <Typography.Title level={3} strong className='titlel' style={{ color: 'black', textShadow: '2px' }}>
+                <Typography.Title level={2} strong className='titlel' style={{ color: 'black', textShadow: '2px', marginBottom:'3px' }}>
                     Sign In
                 </Typography.Title>
-                <Typography.Title level={1} type="secondary" strong className='sloganl' style={{ color: 'grey', textShadow: '2px' }} >
-                    Unlock your world
+                <Typography.Title level={1}  strong className='sloganl' style={{ color: 'grey', textShadow: '2px' }} >
+                    Let's heal together!
                 </Typography.Title>
                 <Form layout="vertical" onFinish={handleLogin} autoComplete="off">
                     <Form.Item
